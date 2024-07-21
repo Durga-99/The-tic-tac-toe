@@ -1,0 +1,54 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f0f0f0;
+  font-family: 'Arial', sans-serif;
+}
+
+.App {
+  text-align: center;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 150px);
+  grid-gap: 10px;
+}
+
+.block {
+  width: 150px;
+  height: 150px;
+  border: 5px solid #333;
+  background-size: cover;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.block:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.mark1 {
+  background-image: url("images/circle.png");
+  background-size: 70%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.mark2 {
+  background-image: url("images/cross.png");
+  background-size: 70%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+
